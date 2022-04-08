@@ -35,16 +35,17 @@ $desPays = getCountriesByContinent($continent);
            <th>Population</th>
            <th>Capitale</th>
            <th>Drapeau</th>
+           <th>Wikipédia</th>
          </tr>
       <?php foreach ($desPays as $pays): ?> 
           <tr>
-            <td> <?php echo $pays->Name ?></td>
+            <td><a href="detail.php?id=<?php echo $pays->id ?>"> <?php echo $pays->Name ?> </a></td>
             <td> <?php echo $pays->Population ?></td> 
             <td> <?php echo getCapitalByCountry($pays->Capital)?></td>   
             <td> <img src= images\drapeau\<?php echo $pays->Code2 ?>.png ></td>
+            <td><a href="https://Wikipedia.org/wiki/<?php echo $pays->Name ?>"> <?php echo $pays->Code ?> Wiki Page</a></td>
          </tr>
-         <?php endforeach; ?> 
-       
+         <?php endforeach; ?>        
      </table>
     </div>
     <p>
