@@ -33,5 +33,7 @@ Initié au lycée Léonard de Vinci - 77000 Melun
 
 ![copie ecran](./images/projet-attendus.png)
 
+
+### Update au 8 Avril 2022
 Une refonte du site Web à été faite, nous pouvons désormais observer le nom des pays, le nombre au quel la population s'eleve, la capitale et le drapeau du pays. 
 Il est possible d'avoir accès à plus de details en cliquant sur le nom du Pays, si plus d'informations sont voulu, une colonne du tableau est resérvé à la page Wikipédia du territoire.  
