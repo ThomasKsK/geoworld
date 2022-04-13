@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `city` (
   `id` int(11) NOT NULL,
   `idCountry` int(11) DEFAULT NULL,
-  `Name` char(35) NOT NULL DEFAULT '',
+  `NameCity` char(35) NOT NULL DEFAULT '',
   `District` char(20) NOT NULL DEFAULT '',
   `Population` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
