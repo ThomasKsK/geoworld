@@ -39,7 +39,7 @@ CREATE TABLE `city` (
 -- Déchargement des données de la table `city`
 --
 
-INSERT INTO `city` (`id`, `idCountry`, `Name`, `District`, `Population`) VALUES
+INSERT INTO `city` (`id`, `idCountry`, `NameCity`, `District`, `Population`) VALUES
 (1, 2, 'Kabul', 'Kabol', 1780000),
 (2, 2, 'Qandahar', 'Qandahar', 237500),
 (3, 2, 'Herat', 'Herat', 186800),
