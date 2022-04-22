@@ -23,14 +23,14 @@
 require_once 'inc/connect-db.php';
 require_once 'inc/manager-db.php';
   $id = $_GET['id'];
-  $capitale = $_GET['Capitale'];
 $detailsPays = getDetailsPays($id);
 ?>
+</head>
       <?php foreach ($detailsPays as $dPays): ?> 
 <ul class="list-group">
   <li class="list-group-item active">Détails</li>
   <li class="list-group-item">Pays : <?php echo $dPays->Name ?> </li>
-  <li class="list-group-item">Capitale: <?php echo $capitale ?> </li>
+  <li class="list-group-item">Capitale: <?php echo getCapitalByCountry($dPays->Capital)?> </li>
   <li class="list-group-item">Continent : <?php echo $dPays->Continent ?> </li>
   <li class="list-group-item">Region : <?php echo $dPays->Region ?> </li>
   <li class="list-group-item">Année d'Independance : <?php echo $dPays->IndepYear ?> </li>
